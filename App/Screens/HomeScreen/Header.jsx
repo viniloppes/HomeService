@@ -16,7 +16,7 @@ export default function Header() {
                     <Image source={{ uri: user?.imageUrl }} style={styles.userImage} />
                     <View>
                         <Text style={{ color: Color.WHITE }}>Welcome!</Text>
-                        <Text style={{ color: Color.WHITE, fontSize: 20 }}>{user?.fullName}!</Text>
+                        <Text style={{ color: Color.WHITE, fontSize: 20, fontFamily: 'outfit-medium' }}>{user?.fullName}!</Text>
                     </View>
                 </View>
                 <FontAwesome name="bookmark-o" size={27} color="white" />
