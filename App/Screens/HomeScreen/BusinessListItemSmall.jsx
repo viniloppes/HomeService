@@ -18,7 +18,7 @@ export default function BusinessListItemSmall({ business }) {
                     borderRadius: 3,
                     alignSelf: 'flex-start',
                     paddingHorizontal: 7
-                }}>{business?.category[0]?.name}</Text>
+                }}>{business?.category?.name}</Text>
             </View>
         </View>
     )
@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
     container: {
         padding: 10,
         backgroundColor: Color.WHITE,
-        borderRadius: 10
+        borderRadius: 10,
+        
     },
     infoContainer: {
         padding: 7,
