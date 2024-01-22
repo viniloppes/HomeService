@@ -13,7 +13,7 @@ export default function BusinessListItemSmall({ business }) {
                 <Text style={{ fontSize: 13, fontFamily: 'outfit' }}>{business?.contactPerson}</Text>
                 <Text style={{
                     fontSize: 10, fontFamily: 'outfit', padding: 3,
-                    Color: Color.PRIMARY,
+                    color: Color.PRIMARY,
                     backgroundColor: Color.PRIMARY_LIGHT,
                     borderRadius: 3,
                     alignSelf: 'flex-start',
