@@ -9,7 +9,7 @@ import BusinessAboutMe from './BusinessAboutMe';
 import BookingModal from './BookingModal';
 export default function BusinessDetailScreen() {
     const params = useRoute().params;
-    const [business, setBusiness] = useState([]);
+    const [business, setBusiness] :any = useState([]);
     const [showModal, setShowModal] = useState(false);
     const navigation = useNavigation()
     useEffect(() => {
@@ -76,7 +76,7 @@ export default function BusinessDetailScreen() {
 
             {/* booking screen modal */}
             <Modal animationType='slide' visible={showModal}>
-               <BookingModal hideModal={() => setShowModal(false)}/>
+               <BookingModal businessId={business.id} hideModal={() => setShowModal(false)}/>
             </Modal>
         </View>
 
